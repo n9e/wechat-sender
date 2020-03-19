@@ -4,8 +4,6 @@ Nightingale的理念，是将告警事件扔到redis里就不管了，接下来�
 
 这里提供一个微信的sender，参考了[https://github.com/yanjunhui/chat](https://github.com/yanjunhui/chat)，具体如何获取企业微信信息，也可以参看yanjunhui这个repo
 
-**因为个人没有企业微信服务号，没法测试，这个代码未经过测试，希望有账号的朋友可以帮忙测试一下并将结果反馈给我，我的微信是 cnperl**
-
 ## compile
 
 ```bash
