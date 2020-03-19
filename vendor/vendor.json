@@ -1,0 +1,75 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "2UmMbNHc8FBr98mJFN1k8ISOIHk=",
+			"path": "github.com/garyburd/redigo/internal",
+			"revision": "433969511232c397de61b1442f9fd49ec06ae9ba",
+			"revisionTime": "2017-05-10T23:06:39Z"
+		},
+		{
+			"checksumSHA1": "/42qbOB5nE4WjdPstQzI4b3IZCU=",
+			"path": "github.com/garyburd/redigo/redis",
+			"revision": "433969511232c397de61b1442f9fd49ec06ae9ba",
+			"revisionTime": "2017-05-10T23:06:39Z"
+		},
+		{
+			"checksumSHA1": "KATjlbDkTW6LhOnQ/Ppa2d5C9tM=",
+			"path": "github.com/toolkits/pkg/file",
+			"revision": "f7b361f7753e41eaa4748e460f3862788e403739",
+			"revisionTime": "2019-11-22T08:41:33Z"
+		},
+		{
+			"checksumSHA1": "TLt5szYAKtNhbKOH5qrJwEP+oMQ=",
+			"path": "github.com/toolkits/pkg/logger",
+			"revision": "f7b361f7753e41eaa4748e460f3862788e403739",
+			"revisionTime": "2019-11-22T08:41:33Z"
+		},
+		{
+			"checksumSHA1": "LCvHj0zGUJruxwHqnhXtF2kWYVY=",
+			"path": "github.com/toolkits/pkg/mail",
+			"revision": "f7b361f7753e41eaa4748e460f3862788e403739",
+			"revisionTime": "2019-11-22T08:41:33Z"
+		},
+		{
+			"checksumSHA1": "m5BO8F8Y9TUGcTphiAUqDfIBAxw=",
+			"path": "github.com/toolkits/pkg/runner",
+			"revision": "f7b361f7753e41eaa4748e460f3862788e403739",
+			"revisionTime": "2019-11-22T08:41:33Z"
+		},
+		{
+			"checksumSHA1": "o1fLrwRsHDaR6OSB/Fm28rkWpag=",
+			"origin": "github.com/toolkits/pkg/vendor/go.uber.org/automaxprocs",
+			"path": "go.uber.org/automaxprocs",
+			"revision": "f7b361f7753e41eaa4748e460f3862788e403739",
+			"revisionTime": "2019-11-22T08:41:33Z"
+		},
+		{
+			"checksumSHA1": "UYRQxoaNh6ljeO5Q5W4ZbTb0gdE=",
+			"path": "go.uber.org/automaxprocs/internal/cgroups",
+			"revision": "e393bb0ea0644204c502247d647e428742196ebe",
+			"revisionTime": "2020-01-23T19:41:49Z"
+		},
+		{
+			"checksumSHA1": "xg6RAEnWxr7NgAoQros7Q1VrKa4=",
+			"path": "go.uber.org/automaxprocs/internal/runtime",
+			"revision": "e393bb0ea0644204c502247d647e428742196ebe",
+			"revisionTime": "2020-01-23T19:41:49Z"
+		},
+		{
+			"checksumSHA1": "8K6sehnGtjIJawn4LY0+B4EzIOI=",
+			"path": "go.uber.org/automaxprocs/maxprocs",
+			"revision": "e393bb0ea0644204c502247d647e428742196ebe",
+			"revisionTime": "2020-01-23T19:41:49Z"
+		},
+		{
+			"checksumSHA1": "ZSWoOPUNRr5+3dhkLK3C4cZAQPk=",
+			"origin": "github.com/toolkits/pkg/vendor/gopkg.in/yaml.v2",
+			"path": "gopkg.in/yaml.v2",
+			"revision": "f7b361f7753e41eaa4748e460f3862788e403739",
+			"revisionTime": "2019-11-22T08:41:33Z"
+		}
+	],
+	"rootPath": "github.com/n9e/mail-sender"
+}

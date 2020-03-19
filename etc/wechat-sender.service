@@ -1,0 +1,19 @@
+[Unit]
+Description=Nightingale wechat sender
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=root
+Group=root
+
+Type=simple
+ExecStart=/home/n9e/wechat-sender
+WorkingDirectory=/home/n9e
+
+Restart=always
+RestartSec=1
+StartLimitInterval=0
+
+[Install]
+WantedBy=multi-user.target

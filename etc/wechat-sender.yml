@@ -1,0 +1,24 @@
+---
+logger:
+  dir: "logs/wechat-sender"
+  level: "DEBUG"
+  keepHours: 24
+
+redis:
+  addr: "127.0.0.1:6379"
+  pass: "1234"
+  idle: 5
+  timeout:
+    conn: 500
+    read: 3000
+    write: 3000
+
+# 这个配置不用动，worker是调用wechat的并发数
+consumer:
+  queue: "/n9e/sender/im"
+  worker: 10
+
+wechat:
+  corp_id: "ww6424d33203e90e20"
+  agent_id: 1000002
+  secret: "FoST_8RQSTjZwH_CN3aQW6UKksjCSI9mizFqD7HKhrw"
