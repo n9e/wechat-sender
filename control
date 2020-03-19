@@ -84,7 +84,7 @@ reload()
 pack()
 {
 	v=$(date +%Y-%m-%d-%H-%M-%S)
-	tar zcvf $binfile-$v.tar.gz control $binfile etc/message.tpl etc/wechat-sender.yml etc/wechat-sender.service
+	tar zcvf $binfile-$v.tar.gz control $binfile etc/wechat.tpl etc/wechat-sender.yml etc/wechat-sender.service
 }
 
 case "$1" in

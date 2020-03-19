@@ -26,7 +26,7 @@ go build
 编译完成之后可以打个包扔到线上去跑，将二进制和配置文件打包即可：
 
 ```bash
-tar zcvf wechat-sender.tar.gz wechat-sender etc/wechat-sender.yml etc/message.tpl
+tar zcvf wechat-sender.tar.gz wechat-sender etc/wechat-sender.yml etc/wechat.tpl
 ```
 
 ## test
