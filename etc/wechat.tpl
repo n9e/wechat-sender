@@ -2,7 +2,7 @@
 报警已升级
 ---
 {{end}}
-事件状态：P{{.Priority} {{.Status}}
+事件状态：P{{.Priority}} {{.Status}}
 策略名称：{{.Sname}}
 endpoint：{{.Endpoint}}
 metric：{{.Metric}}

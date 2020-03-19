@@ -84,7 +84,7 @@ func parseEtime(etime int64) string {
 }
 
 func genContent(message *dataobj.Message) string {
-	fp := path.Join(runner.Cwd, "etc", "message.tpl")
+	fp := path.Join(runner.Cwd, "etc", "wechat.tpl")
 	t, err := template.ParseFiles(fp)
 	if err != nil {
 		payload := fmt.Sprintf("InternalServerError: cannot parse %s %v", fp, err)
