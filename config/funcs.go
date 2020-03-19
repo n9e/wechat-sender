@@ -43,9 +43,9 @@ func Test(args []string) {
 		})
 
 		if err != nil {
-			fmt.Printf("send to %s fail: %v", args[i], err)
+			fmt.Printf("send to %s fail: %v\n", args[i], err)
 		} else {
-			fmt.Printf("send to %s succ", args[i])
+			fmt.Printf("send to %s succ\n", args[i])
 		}
 	}
 }
