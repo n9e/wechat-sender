@@ -19,7 +19,14 @@ go build
 
 ## configuration
 
-直接修改etc/wechat-sender.yml即可
+直接修改etc/wechat-sender.yml即可。另外n9e-monapi这个模块默认的发送通道只打开了mail，如果要同时使用im，需要在notify这里打开相关配置：
+
+```yaml
+notify:
+  p1: ["mail", "im"]
+  p2: ["mail", "im"]
+  p3: ["mail", "im"]
+```
 
 ## pack
 
