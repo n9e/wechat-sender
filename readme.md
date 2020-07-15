@@ -12,6 +12,8 @@ mkdir -p github.com/n9e
 cd github.com/n9e
 git clone https://github.com/n9e/wechat-sender.git
 cd wechat-sender
+# 该项目不需要mod,临时关闭,如其他项目需要记得在env开启来
+export GO111MODULE=off
 go build
 ```
 
