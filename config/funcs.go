@@ -31,7 +31,7 @@ func Test(args []string) {
 	chatClient := corp.New(c.WeChat.CorpID, c.WeChat.AgentID, c.WeChat.Secret)
 
 	if len(args) == 0 {
-		fmt.Println("mail address not given")
+		fmt.Println("user not given")
 		os.Exit(1)
 	}
 

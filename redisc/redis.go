@@ -15,6 +15,7 @@ func InitRedis() {
 
 	addr := cfg.Redis.Addr
 	pass := cfg.Redis.Pass
+	db := cfg.Redis.DB
 	maxIdle := cfg.Redis.Idle
 	idleTimeout := 240 * time.Second
 
@@ -35,6 +36,13 @@ func InitRedis() {
 				if _, err := c.Do("AUTH", pass); err != nil {
 					c.Close()
 					logger.Error("redis auth fail, pass: ", pass)
+					return nil, err
+				}
+			}
+			if db != 0 {
+				if _, err := c.Do("SELECT", db); err != nil {
+					c.Close()
+					logger.Error("redis select db fail, db: ", db)
 					return nil, err
 				}
 			}
