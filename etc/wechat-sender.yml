@@ -7,6 +7,7 @@ logger:
 redis:
   addr: "127.0.0.1:6379"
   pass: ""
+  db: 0
   idle: 5
   timeout:
     conn: 500
