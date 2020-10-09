@@ -11,12 +11,17 @@ type Config struct {
 	WeChat   wechatSection   `yaml:"wechat"`
 	Consumer consumerSection `yaml:"consumer"`
 	Redis    redisSection    `yaml:"redis"`
+	HTTP     httpSection     `yaml:"http"`
 }
 
 type loggerSection struct {
 	Dir       string `yaml:"dir"`
 	Level     string `yaml:"level"`
 	KeepHours uint   `yaml:"keepHours"`
+}
+
+type httpSection struct {
+	Listen string `yaml:"listen"`
 }
 
 type redisSection struct {
@@ -34,6 +39,7 @@ type timeoutSection struct {
 }
 
 type consumerSection struct {
+	Enable bool   `yaml:"enable"`
 	Queue  string `yaml:"queue"`
 	Worker int    `yaml:"worker"`
 }

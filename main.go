@@ -15,6 +15,7 @@ import (
 
 	"github.com/n9e/wechat-sender/config"
 	"github.com/n9e/wechat-sender/cron"
+	"github.com/n9e/wechat-sender/http"
 	"github.com/n9e/wechat-sender/redisc"
 )
 
@@ -59,8 +60,12 @@ func main() {
 	config.InitLogger()
 	redisc.InitRedis()
 
-	go cron.SendWeChat()
+	c := config.Get()
+	if c.Consumer.Enable {
+		go cron.SendWeChat()
+	}
 
+	http.Start()
 	ending()
 }
 
@@ -74,6 +79,7 @@ func ending() {
 
 	logger.Close()
 	redisc.CloseRedis()
+	http.Shutdown()
 	fmt.Println("sender stopped successfully")
 }
 

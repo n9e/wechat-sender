@@ -4,6 +4,9 @@ logger:
   level: "DEBUG"
   keepHours: 24
 
+http:
+  listen: 0.0.0.0:2501
+  
 redis:
   addr: "127.0.0.1:6379"
   pass: ""
@@ -14,8 +17,9 @@ redis:
     read: 3000
     write: 3000
 
-# 这个配置不用动，worker是调用wechat的并发数
+# worker是调用wechat的并发数
 consumer:
+  enable: false
   queue: "/n9e/sender/im"
   worker: 10
 
